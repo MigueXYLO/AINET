@@ -20,7 +20,7 @@
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
                 <!-- Logo + Menu Items + Hamburger -->
-                <div class="relative flex-col sm:flex-row px-6 sm:px-0 grow flex justify-between">
+                <div  class="relative flex-col sm:flex-row px-6 sm:px-0 grow flex justify-between">
 
                     <!-- Logo -->
                     <div class="shrink-0 -ms-4">
@@ -30,7 +30,7 @@
                     </div>
 
                     <!-- Menu Items -->
-                    <div class="grow flex flex-col sm:flex-row items-stretch">
+                    <div id="menu" class="grow flex flex-col sm:flex-row items-stretch invisible h-0 sm:visible sm:h-auto">
                         <!-- Menu Item: Introduction -->
                         <div class="flex me-0 sm:me-2">
                             <a class=" grow inline-flex items-center h-16 px-3 pt-1 text-sm font-medium text-gray-900 border-b-2 border-indigo-400 focus:outline-none focus:border-indigo-700" href="./index.html">
@@ -46,8 +46,8 @@
                         </div>
 
                         <!-- Menu Item: Curricula -->
-                        <div class="relative sm:static group flex me-0 sm:me-2">
-                            <button class=" grow inline-flex items-center h-16 px-3 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:outline-none focus:border-gray-300 focus:text-gray-700 hover:bg-gray-100 sm:hover:bg-white">
+                        <div class="relative sm:static group flex flex-col me-0 sm:me-2">
+                            <button id="button_curricula" class=" grow inline-flex items-center h-16 px-3 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:outline-none focus:border-gray-300 focus:text-gray-700 hover:bg-gray-100 sm:hover:bg-white">
                                 <div>Curricula</div>
                                 <div>
                                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
@@ -59,50 +59,65 @@
                                 </div>
                             </button>
 
-                            <div class="z-40 w-full items-center                                         grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3                                         gap-3 p-6 bg-white                                         absolute left-0 top-14 origin-top-left                                         rounded-md ring-1 ring-black ring-opacity-5 shadow-lg invisible group-hover:visible">
-                                <a class="px-2 py-4 border-b-2 border-indigo-400 text-sm font-medium leading-5 text-gray-900 focus:outline-none focus:border-indigo-700 focus:border-gray-300" href="./curricula.html">
+                            <div id="submenu_curricula"
+                                 class="z-40 w-full items-center
+                                         grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3
+                                         gap-3 bg-white
+                                         sm:absolute sm:left-0 sm:top-14 sm:origin-top-left
+                                         sm:rounded-md sm:ring-1 sm:ring-black sm:ring-opacity-5 sm:shadow-lg
+                                         h-0 sm:h-auto
+                                         p-0 ps-6 sm:p-6
+                                         invisible sm:invisible sm:group-hover:visible"
+                            >
+                                <a class="submenu-curricula-dropdown-active" href="./curricula.html">
                                     Computer Engineering
                                 </a>
 
-                                <a class="px-2 py-4 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:border-gray-300 hover:text-gray-700 focus:outline-none focus:border-gray-300 focus:text-gray-700" href="./curricula.html">
+                                <a class="submenu-curricula-dropdown" href="./curricula.html">
                                     Digital Games and Multimedia
                                 </a>
 
-                                <a class="px-2 py-4 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:border-gray-300 hover:text-gray-700 focus:outline-none focus:border-gray-300 focus:text-gray-700" href="./curricula.html">
+                                <a class="submenu-curricula-dropdown" href="./curricula.html">
                                     Master's in Computer Engineering - Mobile Computing
                                 </a>
 
-                                <a class="px-2 py-4 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:border-gray-300 hover:text-gray-700 focus:outline-none focus:border-gray-300 focus:text-gray-700" href="./curricula.html">
+                                <a class="submenu-curricula-dropdown" href="./curricula.html">
                                     Master's in Cybersecurity and Computer Forensics
                                 </a>
 
-                                <a class="px-2 py-4 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:border-gray-300 hover:text-gray-700 focus:outline-none focus:border-gray-300 focus:text-gray-700" href="./curricula.html">
+                                <a class="submenu-curricula-dropdown" href="./curricula.html">
                                     Master's in Data Science
                                 </a>
 
-                                <a class="px-2 py-4 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:border-gray-300 hover:text-gray-700 focus:outline-none focus:border-gray-300 focus:text-gray-700" href="./curricula.html">
+                                <a class="submenu-curricula-dropdown" href="./curricula.html">
                                     TeSP - Web and Multimedia Development
                                 </a>
 
-                                <a class="px-2 py-4 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:border-gray-300 hover:text-gray-700 focus:outline-none focus:border-gray-300 focus:text-gray-700" href="./curricula.html">
+                                <a class="submenu-curricula-dropdown" href="./curricula.html">
                                     TeSP - Information System Programming
                                 </a>
 
-                                <a class="px-2 py-4 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:border-gray-300 hover:text-gray-700 focus:outline-none focus:border-gray-300 focus:text-gray-700" href="./curricula.html">
+                                <a class="submenu-curricula-dropdown" href="./curricula.html">
                                     TeSP - Computer Networks and Systems
                                 </a>
-                                <a class="px-2 py-4 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:border-gray-300 hover:text-gray-700 focus:outline-none focus:border-gray-300 focus:text-gray-700" href="./curricula.html">
+                                <a class="submenu-curricula-dropdown" href="./curricula.html">
                                     TeSP - Cybersecurity and Computer Networks
                                 </a>
-                                <a class="px-2 py-4 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:border-gray-300 hover:text-gray-700 focus:outline-none focus:border-gray-300 focus:text-gray-700" href="./curricula.html">
+                                <a class="submenu-curricula-dropdown" href="./curricula.html">
                                     TeSP - IT Technologies
                                 </a>
                             </div>
                         </div>
 
                         <!-- Menu Item: User -->
-                        <div class="relative group flex me-0 ms-0 sm:me-2 sm:ms-auto">
-                            <button class="grow hover:bg-gray-100 sm:hover:bg-white inline-flex items-center h-16 px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                        <div class="relative group flex flex-col ms-0 sm:ms-auto me-0 sm:me-2">
+                            <button id="button_user" class="grow inline-flex items-center h-16
+                                                     px-3 sm:px-1 pt-1
+                                                     text-sm font-medium text-gray-500
+                                                     border-b-2 border-transparent hover:text-gray-700
+                                                     focus:outline-none focus:text-gray-700
+                                                     hover:bg-gray-100 sm:hover:bg-white"
+                            >
                                 <div class="pe-1">
                                     <img src="img/photos/photo_example.jpeg" class="w-12 h-12 rounded-full">
                                 </div>
@@ -118,7 +133,15 @@
                                     </svg>
                                 </div>
                             </button>
-                            <div class="absolute right-2 top-14 origin-bottom-right w-48 bg-white grid grid-cols-1 rounded-md ring-1 ring-black ring-opacity-5 shadow-lg invisible group-hover:visible ">
+                            <div id="submenu_user"
+                                        class="sm:absolute sm:right-2 sm:top-14 sm:origin-bottom-right
+                                         w-full sm:w-48 bg-white
+                                         grid grid-cols-1
+                                         sm:rounded-md sm:ring-1 sm:ring-black sm:ring-opacity-5 sm:shadow-lg
+                                         h-0 sm:h-auto
+                                         invisible sm:invisible sm:group-hover:visible
+                                         ps-6 sm:ps-0"
+                            >
                                 <a class="w-full px-4 py-4 text-start text-sm leading-5 inline-flex h-auto text-gray-500 hover:text-gray-700 hover:bg-gray-100 focus:outline-none focus:text-gray-700 focus:bg-gray-100" href="./profile.html">
                                     Profile
                                 </a>
@@ -134,11 +157,11 @@
 
                     <!-- Hamburger -->
                     <div class="absolute right-0 top-0 flex sm:hidden pt-3 pe-3">
-                        <button>
+                        <button id="hamburger_btn">
                             <svg class="h-8 w-8" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                <path id="hamburger_btn_open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h16M4 18h16"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                <path class="invisible" id="hamburger_btn_close" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M6 18L18 6M6 6l12 12"></path>
                             </svg>
                         </button>
@@ -218,6 +241,7 @@
             </div>
         </main>
     </div>
+<script src="./js/menu.js"></script>
 </body>
 
 </html>
