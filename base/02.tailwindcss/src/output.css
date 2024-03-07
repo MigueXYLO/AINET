@@ -556,14 +556,6 @@ video {
   position: relative;
 }
 
-.right-2 {
-  right: 0.5rem;
-}
-
-.top-14 {
-  top: 3.5rem;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -572,8 +564,20 @@ video {
   right: 0px;
 }
 
+.right-2 {
+  right: 0.5rem;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.top-14 {
+  top: 3.5rem;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .mx-auto {
@@ -586,32 +590,24 @@ video {
   margin-bottom: 1rem;
 }
 
+.-ms-4 {
+  margin-inline-start: -1rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
 
-.me-2 {
-  margin-inline-end: 0.5rem;
-}
-
-.ms-12 {
-  margin-inline-start: 3rem;
-}
-
-.ms-auto {
-  margin-inline-start: auto;
-}
-
-.-ms-4 {
-  margin-inline-start: -1rem;
+.me-0 {
+  margin-inline-end: 0px;
 }
 
 .ms-0 {
   margin-inline-start: 0px;
 }
 
-.me-0 {
-  margin-inline-end: 0px;
+.ms-12 {
+  margin-inline-start: 3rem;
 }
 
 .flex {
@@ -624,10 +620,6 @@ video {
 
 .grid {
   display: grid;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-12 {
@@ -672,10 +664,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.max-w-11 {
-  max-width: 2.75rem;
 }
 
 .max-w-7xl {
@@ -784,6 +772,11 @@ video {
   padding-right: 0.25rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -792,6 +785,11 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-1 {
@@ -814,16 +812,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -832,16 +820,16 @@ video {
   padding-inline-end: 0.25rem;
 }
 
+.pe-3 {
+  padding-inline-end: 0.75rem;
+}
+
 .ps-1 {
   padding-inline-start: 0.25rem;
 }
 
 .pt-1 {
   padding-top: 0.25rem;
-}
-
-.pe-3 {
-  padding-inline-end: 0.75rem;
 }
 
 .pt-3 {
@@ -995,12 +983,16 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:ms-auto {
-    margin-inline-start: auto;
+  .sm\:static {
+    position: static;
   }
 
   .sm\:me-2 {
     margin-inline-end: 0.5rem;
+  }
+
+  .sm\:ms-auto {
+    margin-inline-start: auto;
   }
 
   .sm\:hidden {
@@ -1023,14 +1015,14 @@ video {
     border-radius: 0.5rem;
   }
 
-  .sm\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
   .sm\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .sm\:hover\:bg-white:hover {
